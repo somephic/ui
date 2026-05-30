@@ -1,0 +1,21 @@
+# Languages
+# 
+## Astro
+[[language]]
+auto-format = true
+language-servers = ["astro-ls"]
+name = "astro"
+
+[language.formatter]
+args = ["--plugin", "prettier-plugin-astro", "--parser", "typescript"]
+command = "./node_modules/.bin/prettier"
+
+## Svelte
+[[language]]
+auto-format = true
+language-servers = ["svelteserver"]
+name = "svelte"
+
+[language.formatter]
+args = ["--plugin", "prettier-plugin-svelte", "--parser", "svelte"]
+command = "./node_modules/.bin/prettier"
